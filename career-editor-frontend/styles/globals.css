@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@layer base {*/
+  :root {
+    font-size: 2mm;
+    font-family: "Segoe UI", "メイリオ";
+  }
+  body {
+    box-sizing: border-box;
+    margin: 5mm;
+  }
+
+  p:not(:last-child) {
+    @apply mb-[2.5mm];
+  }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    @apply box-border;
+  }
+  table {
+    @apply w-full;
+  }
+  table th,
+  table td {
+    @apply border border-black p-2;
+  }
+  table th {
+    @apply bg-gray-300;
+  }
+  table td {
+    @apply bg-white;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 5mm;
+  }
+
+  @media print {
+    body {
+      margin: 0;
+    }
+  }
+/*}*/
