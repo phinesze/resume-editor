@@ -1,5 +1,16 @@
-type Props = { path: string };
+import { createElement } from "react";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import rehypeReact from "rehype-react";
 
-export const MarkdownDocument = ({ path }: Props) => {
-  return <section>{"path = " + path}</section>;
+type Props = { document?: string };
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkRehype)
+  .use(rehypeReact, { createElement });
+
+export const MarkdownDocument = ({ document }: Props) => {
+  return <section>{processor.processSync(document).result}</section>;
 };

@@ -1,5 +1,6 @@
 export const career__ = {
   title: "",
+  main,
   times: {
     start: "yyyy-mm-dd",
     end: "yyyy-mm-dd",

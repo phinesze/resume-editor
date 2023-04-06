@@ -36,7 +36,7 @@ export const Projectbody = ({}: Props) => {
                 {career.times && <IntervalDateLabel value={career.times} />}
               </td>
               <td className="align-top" rowSpan={getRowSpan(career) - 1}>
-                <MarkdownDocument path={`/careers/${career.id}`} />
+                <MarkdownDocument document={career.main} />
               </td>
               <td className="align-top" rowSpan={getRowSpan(career) - 1}>
                 {career.environments && (
