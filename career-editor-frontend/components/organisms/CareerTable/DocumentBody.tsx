@@ -3,10 +3,10 @@ import { MarkdownDocument } from "@/components/atoms/MarkdownDocument";
 
 type Props = {
   label: string;
-  markdownPath: string;
+  document: string;
 };
 
-export const DocumentBody = ({ label, markdownPath }: Props) => {
+export const DocumentBody = ({ label, document }: Props) => {
   return (
     <tbody>
       <tr>
@@ -14,7 +14,7 @@ export const DocumentBody = ({ label, markdownPath }: Props) => {
           {label}
         </th>
         <td className="p-4 align-top" colSpan="3">
-          <MarkdownDocument path="{markdownPath}" />
+          <MarkdownDocument document={document} />
         </td>
       </tr>
     </tbody>

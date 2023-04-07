@@ -2,7 +2,10 @@ import { useMemo } from "react";
 import { DateLabel } from "@/components/atoms/DateLabel";
 import { DocumentBody } from "@/components/organisms/CareerTable/DocumentBody";
 import { Projectbody } from "@/components/organisms/CareerTable/ProjectsBody";
-
+import about from "@/constants/about.md";
+import accounts from "@/constants/accounts.md";
+import frameworks from "@/constants/frameworks.md";
+import supplement from "@/constants/supplement.md";
 type Props = {};
 
 export const CareerTable = ({}: Props) => {
@@ -22,11 +25,11 @@ export const CareerTable = ({}: Props) => {
           <col className="w-[auto]" />
           <col className="w-[50mm]" />
         </colgroup>
-        <DocumentBody label="自己PR" markdown-path="/about" />
-        <DocumentBody label="主な経験" markdown-path="/frameworks" />
-        <DocumentBody label="アカウント" markdown-path="/accounts" />
+        <DocumentBody label="自己PR" document={about} />
+        <DocumentBody label="主な経験" document={frameworks} />
+        <DocumentBody label="アカウント" document={accounts} />
         <Projectbody />
-        <DocumentBody label="一問一答" markdown-path="/supplement" />
+        <DocumentBody label="一問一答" document={supplement} />
       </table>
     </>
   );
