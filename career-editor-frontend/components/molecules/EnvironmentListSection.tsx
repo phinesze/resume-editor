@@ -13,10 +13,12 @@ export const EnvironmentListSection = ({ environments }: Props) => {
           <div>
             {elements?.map((element, index) => {
               return (
-                <div key={index}>
-                  <EnvironmentLabel element={element} />
-                  {index + 1 < elements.length && <span>、</span>}
-                </div>
+                <>
+                  <EnvironmentLabel key={index} element={element} />
+                  {index + 1 < elements.length && (
+                    <span key={`${index}-d`}>、</span>
+                  )}
+                </>
               );
             })}
           </div>

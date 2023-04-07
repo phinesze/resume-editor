@@ -14,11 +14,11 @@ export const EnvironmentLabel = ({ element }: Props) => {
   }, [element]);
 
   return (
-    <div className="inline-block">
+    <>
       <span>{elementName}</span>
       {elementOptions && (
         <>{elementOptions.version && <i> (v{elementOptions.version}) </i>}</>
       )}
-    </div>
+    </>
   );
 };
