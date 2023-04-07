@@ -1,8 +1,10 @@
 import { Career } from "@/types/Career";
 
+import main from "@/constants/careers/14.md";
 export const career14: Career = {
   id: 14,
   title: "自社開発のエンジニア人材管理システムのフロントエンドを中心とした開発",
+  main,
   times: {
     start: "2020-12",
     end: "2021-03",

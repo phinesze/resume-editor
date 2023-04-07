@@ -1,8 +1,10 @@
 import { Career } from "@/types/Career";
 
+import main from "@/constants/careers/7.md";
 export const career07: Career = {
   id: 7,
   title: "ネット診断サービス/Webアプリケーション改修",
+  main,
   times: {
     start: "2018-03",
     end: "2018-04",

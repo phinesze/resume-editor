@@ -1,8 +1,11 @@
 import { Career } from "@/types/Career";
 
+import main from "@/constants/careers/17.md";
+
 export const career17: Career = {
   id: 17,
   title: "地方自治体をエンドユーザーとする交通・人流分析WEBアプリの開発",
+  main,
   times: {
     start: "2021-09",
     end: "2022-01",
