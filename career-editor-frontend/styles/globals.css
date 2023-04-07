@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/*@layer base {*/
+@layer base {
   :root {
     font-size: 2mm;
     font-family: "Segoe UI", "メイリオ";
@@ -48,4 +48,4 @@
       margin: 0;
     }
   }
-/*}*/
+}
