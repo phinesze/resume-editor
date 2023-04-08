@@ -1,6 +1,7 @@
 import { useMemo } from "react";
+import { CareerTeamNumber } from "@backend/types/Career";
 
-type Props = { value: number | [number, number] };
+type Props = { value: CareerTeamNumber };
 
 export const TeamNumberLabel = ({ value }: Props) => {
   const teamNumberStr = useMemo(
