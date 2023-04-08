@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { CareerEnvironmentList } from "@/types/Career";
+import { CareerEnvironmentList } from "@/../../../career-editor-backend/src/types/Career";
 import { EnvironmentLabel } from "@/components/atoms/EnvironmentLabel";
 
 type Props = { environments: CareerEnvironmentList };
