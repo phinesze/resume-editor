@@ -16,7 +16,7 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"],
-      "@backend/*": ["./../career-editor-backend/src/*"]
+      "@backend/*": ["./../resume-editor-backend/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -1,5 +1,5 @@
 {
-  "name": "career-editor",
+  "name": "resume-editor",
   "license": "MIT",
   "devDependencies": {
     "husky": "^7.0.0",
@@ -10,7 +10,7 @@
   },
   "private": true,
   "workspaces": [
-    "career-editor-backend",
-    "career-editor-frontend"
+    "resume-editor-backend",
+    "resume-editor-frontend"
   ]
 }
