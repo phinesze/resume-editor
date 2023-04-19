@@ -1,7 +1,5 @@
 # dependencies
 /node_modules
-resume-editor.iml
-
 
 # IDEs and editors
 /.idea
@@ -11,6 +9,7 @@ resume-editor.iml
 *.launch
 .settings/
 *.sublime-workspace
+*.iml
 
 # IDE - VSCode
 .vscode/*
