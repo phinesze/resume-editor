@@ -1,20 +1,20 @@
-import { Career } from "@/types/Career";
-import main from "@/constants/careers/1.md";
+import { Work } from '../../types/Work';
+import main from '@/constants/careers/1.md';
 
-export const career01: Career = {
+export const career01: Work = {
   id: 1,
-  title: "Web会計アプリケーションの開発及び改修（自社開発）",
+  title: 'Web会計アプリケーションの開発及び改修（自社開発）',
   main,
   times: {
-    start: "2013-08",
-    end: "2015-03",
+    start: '2013-08',
+    end: '2015-03',
   },
   teams: {
     全体: 3,
   },
   environments: {
-    OS: [["Cent OS", { version: 6 }]],
-    言語: ["PHP", " JavaScript", " jQuery", " HTML5", " CSS3"],
-    DB: ["MySQL"],
+    OS: [['Cent OS', { version: 6 }]],
+    言語: ['PHP', ' JavaScript', ' jQuery', ' HTML5', ' CSS3'],
+    DB: ['MySQL'],
   },
 };

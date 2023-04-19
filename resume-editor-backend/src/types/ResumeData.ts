@@ -1,4 +1,4 @@
-import { Career } from '@/types/Career';
+import { Work } from './Work';
 
 /**
  * @member id レジュメID
@@ -13,7 +13,8 @@ export interface ResumeData {
   data: {
     caption?: string;
     lastUpdate?: string;
-    experiences?: Career[];
+    works?: Work[];
+    documents?: string[];
   };
   templateData: object;
 }
