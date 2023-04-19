@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { careers } from "@backend/constants/careers";
+import { careers } from "resume-editor-backend";
 import { IntervalDateLabel } from "@/components/molecules/IntervalDateLabel";
 import { MarkdownDocument } from "@/components/atoms/MarkdownDocument";
 import { EnvironmentListSection } from "@/components/molecules/EnvironmentListSection";
