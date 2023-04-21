@@ -1,6 +1,6 @@
 import { User } from '@/types/User';
 
-const users: User[] = [
+export const users: User[] = [
   {
     id: '1',
     fullName: '降音　太郎',
