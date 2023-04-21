@@ -1,3 +1,6 @@
+import { Work } from '../../types/Work';
+
+const main = `
 #### 【想定するエンドユーザー】
 
 一般ユーザー
@@ -22,3 +25,44 @@
 - バックエンドの API でフロントエンド側との繋ぎ込みを考慮して、API のリクエスト・レスポンスと DB の設計(共に gitbook ドキュメント)を改修を提案するプルリクエストを発行いたしました。
 - 前述のプリクエストに伴うコーディングの改修を一部自身で行いました。
 - バックエンド側や Firebase Authentication との通信を axios で実装しました。
+`;
+
+export const work15: Work = {
+  id: 15,
+  title:
+    'コンテンツを出品するユーザーとそのファンとの交流または物品またはデジタルデータの販売を行うECサイトの開発',
+  main,
+  times: {
+    start: '2021-04',
+    end: '2021-08',
+  },
+  teams: {
+    全体: 4,
+  },
+  environments: {
+    フロントエンド: [
+      ['Vue.js', { version: '2' }],
+      ['Nuxt', { version: '2' }],
+      'TypeScript',
+      'ESLint',
+      'Prettier',
+      'Pug',
+      'Sass',
+      ' axios',
+      'Vue Composition Api',
+    ],
+    バックエンド: [
+      'TypeScript',
+      'Google loud Platform',
+      'Firebase Authentication',
+      'Cloud Functions',
+      'Google Spanner',
+    ],
+    その他: [
+      'Jira(BitBucketと連携する)',
+      'docker',
+      'gitbook',
+      'Stripe(決済API)',
+    ],
+  },
+};

@@ -1,4 +1,4 @@
-import { Work } from './Work';
+import { Work, WorkGroup } from './Work';
 
 /**
  * @member id レジュメID
@@ -13,7 +13,7 @@ export interface ResumeData {
   data: {
     caption?: string;
     lastUpdate?: string;
-    works?: Work[];
+    works?: (Work | WorkGroup)[];
     documents?: string[];
   };
   templateData: object;

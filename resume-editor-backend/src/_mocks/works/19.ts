@@ -1,3 +1,6 @@
+import { Work } from '../../types/Work';
+
+const main = `
 #### 【システム概要】
 
 グループ各社で使用されている顧客・ユーザーに関するデータを含めたサービス全般で使用されるデータベースを、社内向けにグループ全体で一括管理をするたのディレクトサービスシステムのウェブサービスの既存システムの置き換えを目的とした開発を行う。
@@ -22,3 +25,37 @@
 - Nest.js で作成された Backend to frontend のエンドポイントの開発、テストケースの作成を行いました。
 - E2E テストを postman 形式のファイルで作成・開発いたしました。
 - ワークフロー管理ツール Apache Airflow のタスクの構築を行いました。
+`;
+
+export const work19: Work = {
+  id: 19,
+  organization: 'K社',
+  title:
+    'グループ社内で使用するディレクトリサービスシステムの既存システムからのリプレイス開発',
+  main,
+  times: {
+    start: '2022-04',
+    end: '2023-03',
+  },
+  teams: {
+    PM: 2,
+    開発: [6, 10],
+  },
+  environments: {
+    フロントエンド: [
+      ['Vue.js', { version: '2' }],
+      ['Nuxt', { version: '2' }],
+      'Tailwind CSS',
+      'Daisy UI',
+      'ESLint',
+      'Prettier',
+      'Sass',
+      'axios',
+      'Vue Composition Api',
+      'Jest',
+    ],
+    BFF: ['Nest.js'],
+    バックエンド: ['Java', 'Spring'],
+    その他: ['Python', 'docker'],
+  },
+};

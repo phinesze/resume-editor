@@ -1,3 +1,6 @@
+import { Work } from '../../types/Work';
+
+const main = `
 #### 【システム概要】
 
 保険代理店用のアプリケーションの設計・コーディング・単体テストなど
@@ -10,3 +13,21 @@
 #### 【担当業務】
 
 要件定義署を基として、詳細設計書の作成、コーディングと単体テスト作業を行いました。
+`;
+
+export const work08: Work = {
+  id: 8,
+  organization: 'C社',
+  title: '大手生命保険会社/保険代理店向けシステムの改修',
+  main,
+  times: {
+    start: '2018-08',
+    end: '2018-10',
+  },
+  teams: {
+    全体: 10,
+  },
+  environments: {
+    OS: ['Windows Server'],
+  },
+};

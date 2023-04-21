@@ -1,3 +1,6 @@
+import { Work } from '../../types/Work';
+
+const main = `
 #### 【想定するエンドユーザー】
 
 企業の人事担当者など
@@ -23,3 +26,32 @@
 - Node.js フレームワークの選定・導入と設定を主導して行いました。
 - バックエンド側や Firebase Authentication との通信を axios で実装しました。
 - バックエンドの API や DB の設計(gitbook ドキュメント)を改修する提案を行い、それに伴うコーディングの改修を一部行いました。
+`;
+
+export const work14: Work = {
+  id: 14,
+  title: '自社開発のエンジニア人材管理システムのフロントエンドを中心とした開発',
+  main,
+  times: {
+    start: '2020-12',
+    end: '2021-03',
+  },
+  teams: {
+    全体: 4,
+  },
+  environments: {
+    フロントエンド: [
+      ['Vue.js', { version: '2' }],
+      ['Nuxt', { version: '2' }],
+      'TypeScript',
+      'ESLint',
+      'Prettier',
+      'Pug',
+      'Sass',
+      'axios',
+      'Vue composition-api',
+    ],
+    バックエンド: ['TypeScript', 'AWS SAM', 'Node.js', 'Postgre SQL'],
+    その他: ['docker', 'gitbook'],
+  },
+};

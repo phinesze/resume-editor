@@ -1,3 +1,6 @@
+import { Work } from '../../types/Work';
+
+const main = `
 #### 【想定するエンドユーザー】
 
 市町村などの地方自治体の担当者
@@ -28,3 +31,36 @@
 - ESLint、Prettier などの Linter の導入を主導しました。
 - デザイナーの作成した機能要件を満たすボタン、入力・選択、セレクトボックスなどの設計・開発を主導いたしました。
 - バックエンドでの改善の提案と ER 図によるデータベースの提案を行いました。
+`;
+
+export const work17: Work = {
+  id: 17,
+  organization: 'K社',
+  title: '地方自治体をエンドユーザーとする交通・人流分析WEBアプリの開発',
+  main,
+  times: {
+    start: '2021-09',
+    end: '2022-01',
+  },
+  teams: {
+    PM: 2,
+    開発: [6, 10],
+  },
+  environments: {
+    フロントエンド: [
+      'TypeScript',
+      ['Vue.js', { version: '2' }],
+      ['Nuxt', { version: '2' }],
+      'Vuetify',
+      'Mapbox',
+      'ESLint',
+      'Prettier',
+      'Stylelint',
+      'Sass',
+      ' axios',
+      'Vue Composition Api',
+    ],
+    バックエンド: ['PostgresSQL'],
+    その他: ['docker'],
+  },
+};

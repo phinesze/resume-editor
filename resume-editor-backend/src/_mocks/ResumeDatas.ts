@@ -1,4 +1,5 @@
 import { ResumeData } from '@/types/ResumeData';
+import { works } from '@/_mocks/works/works';
 
 const users: ResumeData[] = [
   {
@@ -8,7 +9,7 @@ const users: ResumeData[] = [
     data: {
       caption: '職務経歴書',
       lastUpdate: '2023-04-03',
-      works: [],
+      works: works,
       documents: [],
     },
     templateData: {},
