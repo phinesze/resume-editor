@@ -34,7 +34,7 @@ const main = `
 `;
 
 export const work17: Work = {
-  id: 17,
+  id: '17',
   organization: 'K社',
   title: '地方自治体をエンドユーザーとする交通・人流分析WEBアプリの開発',
   main,

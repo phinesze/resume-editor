@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work11: Work = {
-  id: 11,
+  id: '11',
   organization: 'F社',
   title: '大手求人ウェブサイトのフロントエンド開発・運用',
   main,

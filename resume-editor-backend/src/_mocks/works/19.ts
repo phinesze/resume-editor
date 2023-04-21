@@ -28,7 +28,7 @@ const main = `
 `;
 
 export const work19: Work = {
-  id: 19,
+  id: '19',
   organization: 'K社',
   title:
     'グループ社内で使用するディレクトリサービスシステムの既存システムからのリプレイス開発',

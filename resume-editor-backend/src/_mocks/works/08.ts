@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work08: Work = {
-  id: 8,
+  id: '8',
   organization: 'C社',
   title: '大手生命保険会社/保険代理店向けシステムの改修',
   main,

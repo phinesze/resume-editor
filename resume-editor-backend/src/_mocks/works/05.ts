@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work05: Work = {
-  id: 5,
+  id: '5',
   title: 'アジア向け仕事紹介クラウドソーシングサービスの自社開発',
   main,
   times: {

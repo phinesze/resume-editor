@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work09: Work = {
-  id: 9,
+  id: '9',
   organization: 'D社',
   title: '中古車ECサイト/Webアプリケーション運用保守',
   main,

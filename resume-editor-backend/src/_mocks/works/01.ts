@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work01: Work = {
-  id: 1,
+  id: '1',
   title: 'Web会計アプリケーションの開発及び改修（自社開発）',
   main,
   times: {

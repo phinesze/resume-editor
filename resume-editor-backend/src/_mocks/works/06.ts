@@ -15,7 +15,7 @@ const main = `
 `;
 
 export const work06: Work = {
-  id: 6,
+  id: '6',
   title: '大手電子部品メーカー/社内用健康保険システムの新規開発',
   main,
   times: {

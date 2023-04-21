@@ -16,7 +16,7 @@ SiView を直接操作する場合には専門知識が必要となるため、W
 `;
 
 export const work10: Work = {
-  id: 10,
+  id: '10',
   organization: 'E社',
   title: '大手半導体メーカー/生産管理システムのクライアントアプリケーション',
   main,

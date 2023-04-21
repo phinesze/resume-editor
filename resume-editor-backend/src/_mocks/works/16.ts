@@ -15,7 +15,7 @@ Wrike のチケットや AdobeXD の内容に従いフロントエンド側の�
 `;
 
 export const work16: Work = {
-  id: 16,
+  id: '16',
   organization: 'J社',
   title: '既存ファッションECサイトの開発',
   main,

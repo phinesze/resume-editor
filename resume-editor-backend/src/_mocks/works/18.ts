@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work18: Work = {
-  id: 18,
+  id: '18',
   organization: 'I社→L社、M社',
   title:
     '不動産仲介サービスの開発と健康機器メーカーのアンケートウェブサイトの制作',

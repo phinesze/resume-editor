@@ -28,7 +28,7 @@ const main = `
 `;
 
 export const work15: Work = {
-  id: 15,
+  id: '15',
   title:
     'コンテンツを出品するユーザーとそのファンとの交流または物品またはデジタルデータの販売を行うECサイトの開発',
   main,

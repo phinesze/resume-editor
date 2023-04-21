@@ -29,7 +29,7 @@ const main = `
 `;
 
 export const work14: Work = {
-  id: 14,
+  id: '14',
   title: '自社開発のエンジニア人材管理システムのフロントエンドを中心とした開発',
   main,
   times: {

@@ -15,7 +15,7 @@ const main = `
 `;
 
 export const work02: Work = {
-  id: 2,
+  id: '2',
   title: '大手電子部品メーカー/コネクタ（電子部品）検索サイトの改修、追加開発',
   main,
   times: {

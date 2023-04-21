@@ -11,7 +11,7 @@ const main = `
 `;
 
 export const work20: Work = {
-  id: 20,
+  id: '20',
   organization: 'L社',
   title: 'データ活用のマーケティングツールの開発',
   main,

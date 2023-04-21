@@ -17,7 +17,7 @@ const main = `
 `;
 
 export const work07: Work = {
-  id: 7,
+  id: '7',
   organization: 'B社',
   title: 'ネット診断サービス/Webアプリケーション改修',
   main,

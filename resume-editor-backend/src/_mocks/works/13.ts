@@ -15,7 +15,7 @@ const main = `
 `;
 
 export const work13: Work = {
-  id: 13,
+  id: '13',
   organization: 'H社',
   title: '住宅注文システムなどのフロントエンド／バックエンドの開発',
   main,

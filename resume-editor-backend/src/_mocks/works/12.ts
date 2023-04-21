@@ -17,7 +17,7 @@ VR 空間の共有サービス
 `;
 
 export const work12: Work = {
-  id: 12,
+  id: '12',
   organization: 'G社',
   title: 'VR空間共有サービスにおけるフロントエンド／バックエンドの開発',
   main,

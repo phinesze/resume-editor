@@ -15,7 +15,7 @@ const main = `
 `;
 
 export const work03: Work = {
-  id: 3,
+  id: '3',
   title: '企業ウェブサイトの新規開発',
   main,
   times: {

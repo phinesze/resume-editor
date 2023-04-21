@@ -16,7 +16,7 @@ const main = `
 `;
 
 export const work04: Work = {
-  id: 4,
+  id: '4',
   title: '大手電子部品メーカー/社内向け工数管理システムの新規開発',
   main,
   times: {
