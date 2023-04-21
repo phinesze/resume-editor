@@ -1,21 +1,25 @@
-import {Injectable} from '@nestjs/common';
-import {createSSRApp} from "vue";
-import {renderToString} from "@vue/server-renderer";
-import {Component} from "@vue/runtime-core";
-import {DateLabel} from "@/vue-server-renderer/components/presets/atoms/DateLabel"
-import {defineUserComponent} from "@/vue-server-renderer/components/defineUserComponent";
-import {ComponentData, ComponentsService} from "@/components/components.service";
+import { Injectable } from '@nestjs/common';
+import { createSSRApp } from 'vue';
+import { renderToString } from '@vue/server-renderer';
+import { Component } from '@vue/runtime-core';
+import { DateLabel } from '@/vue-server-renderer/components/presets/atoms/DateLabel';
+import { defineUserComponent } from '@/vue-server-renderer/components/defineUserComponent';
+import {
+  ComponentData,
+  ComponentsService,
+} from '@/components/components.service';
 
 @Injectable()
 export class ResumesService {
-    constructor(
-        private readonly componentsService: ComponentsService) {
-    }
+  constructor(private readonly componentsService: ComponentsService) {}
 
-    async getPreviewHTML(resumeData: { title: string }, componentData: ComponentData[]): Promise<string> {
-        const app = createSSRApp({
-            data: () => resumeData,
-            template: `
+  async getPreviewHTML(
+    profile: { title: string },
+    componentData: ComponentData[],
+  ): Promise<string> {
+    const app = createSSRApp({
+      data: () => profile,
+      template: `
                 <html>
                 <head>
                     <link rel="stylesheet" href="./resumes/style.css" />
@@ -27,23 +31,23 @@ export class ResumesService {
                 <UserComponent a="10" b="22" countStr="カウント"/>
                     </div>              
                 </body>
-                </html>`
-        })
+                </html>`,
+    });
 
-        // TODO プリセットなコンポーネントを追加
-        app.component('DateLabel', DateLabel)
+    // TODO プリセットなコンポーネントを追加
+    app.component('DateLabel', DateLabel);
 
-        // APIから取得したユーザー定義コンポーネントのデータを追加
-        for (const {name, template, functions} of componentData) {
-            app.component(name, defineUserComponent(template, functions))
-        }
-
-        const html = await renderToString(app)
-        console.log(html)
-        return html;
+    // APIから取得したユーザー定義コンポーネントのデータを追加
+    for (const { name, template, functions } of componentData) {
+      app.component(name, defineUserComponent(template, functions));
     }
-    
-    async getPreviewCSS() {
-        return `p {font-size: 32px}`
-    }
+
+    const html = await renderToString(app);
+    console.log(html);
+    return html;
+  }
+
+  async getPreviewCSS() {
+    return `p {font-size: 32px}`;
+  }
 }
