@@ -1,5 +1,6 @@
 import { ResumeData } from '@/types/ResumeData';
-import { works } from '@/_mocks/works/works';
+import { works } from '@/_mocks/works';
+import { textSections } from '@/_mocks/textSections';
 
 const users: ResumeData[] = [
   {
@@ -10,7 +11,7 @@ const users: ResumeData[] = [
       caption: '職務経歴書',
       lastUpdate: '2023-04-03',
       works: works,
-      documents: [],
+      textSections,
     },
     templateData: {},
   },
@@ -22,7 +23,7 @@ const users: ResumeData[] = [
       caption: '職務経歴書',
       lastUpdate: '2023-04-13',
       works: [],
-      documents: [],
+      textSections: [],
     },
     templateData: {},
   },
@@ -34,7 +35,7 @@ const users: ResumeData[] = [
       caption: 'RESUME',
       lastUpdate: '2023-04-15',
       works: [],
-      documents: [],
+      textSections: [],
     },
     templateData: {},
   },

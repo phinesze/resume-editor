@@ -1,4 +1,5 @@
-import { Work, WorkGroup } from './Work';
+import { Work, WorkGroup } from '@/types/Work';
+import { TextSection } from '@/types/TextSection';
 
 /**
  * @member id レジュメID
@@ -14,7 +15,7 @@ export interface ResumeData {
     caption?: string;
     lastUpdate?: string;
     works?: (Work | WorkGroup)[];
-    documents?: string[];
+    textSections?: TextSection[];
   };
   templateData: object;
 }

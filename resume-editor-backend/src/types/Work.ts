@@ -9,7 +9,7 @@ export interface WorkGroup {
 }
 
 export interface Work {
-  id: number;
+  id: string | number;
   organization?: string;
   title?: string;
   main?: string;

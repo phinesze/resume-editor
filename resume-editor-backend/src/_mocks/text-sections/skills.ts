@@ -1,3 +1,7 @@
+export const skills = {
+  id: '2',
+  title: '主な経験',
+  text: `
 #### 【JavaScript、TypeScript】(5 年以上)
 
 現状で得意とするメインで使用することの最も多い言語です。
@@ -48,3 +52,5 @@ github をメインに gitlab、bitcuket を使用していました。
 #### 【その他のスキル・経験など】
 
 個人経験ですが、Linux サーバーの構築、AWS EC2 と Route53 を使用したサーバーの立ち上げの経験がございます。
+`,
+};
