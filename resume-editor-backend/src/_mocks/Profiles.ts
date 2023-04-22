@@ -2,7 +2,7 @@ import { Profile } from '@/types/Profile';
 import { works } from '@/_mocks/works';
 import { textSections } from '@/_mocks/textSections';
 
-const profiles: Profile[] = [
+export const profiles: Profile[] = [
   {
     id: '1',
     title: '職務経歴書1',
